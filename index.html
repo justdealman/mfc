@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Московская топливная карта</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1280, user-scalable=yes">
+	<!--<link href="./favicon.ico" rel="shortcut icon">-->
+	<link href="./css/style.css" rel="stylesheet">
+	<!--[if IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<div>
+			<h3>Московская топливная карта</h3>
+			<nav>
+				<ul>
+					<li class="active"><a href="#">Транзакции</a></li>
+					<li><a href="#">Новости <sup>356</sup></a></li>
+				</ul>
+			</nav>
+			<ul class="user">
+				<li><a href="#" data-open="profile" class="settings"><span></span></a></li>
+				<li><a href="#" class="exit"><span></span></a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="content">
+		<aside>
+			<div class="profile">
+				<h3 class="active">Красильников И.К.</h3>
+				<!--<h3 class="inactive">Красильников И.К.</h3>-->
+				<h5><span>На вашем счету</span> 5 150 456,00 <sup>у</sup></h5>
+			</div>
+			<div class="card">
+				<h5>Карты <span>(активные 2 из 3)</span></h5>
+				<ul>
+					<li><span class="active" data-open="card1">1749029759476924792</span></li>
+					<li><span class="active" data-open="card2">7824821231232342344</span></li>
+					<li><span class="inactive">7503876023971085736</span></li>
+				</ul>
+				<button data-open="order">Заказать новую карту</button>
+			</div>
+			<div class="statistic">
+				<h5>Статистика <em></em></h5>
+				<ul>
+					<li>
+						<p class="title">Сегодня</p>
+						<p class="quantity">5 600, 00 <span>л</span></p>
+						<p class="price">221 679,00 <span>у</span></p>
+					</li>
+					<li>
+						<p class="title">Вчера</p>
+						<p class="quantity">7 430, 00 <span>л</span></p>
+						<p class="price">287 541,00 <span>у</span></p>
+					</li>
+					<li>
+						<p class="title">На этой неделе</p>
+						<p class="quantity">5 340, 00 <span>л</span></p>
+						<p class="price">209 593,00 <span>у</span></p>
+					</li>
+				</ul>
+				<button>Показать еще</button>
+			</div>
+		</aside>
+		<section class="list">
+			<div class="filter">
+				<div class="number">
+					<h6>Номер карты:</h6>
+					<ul>
+						<li>
+							<span><em>Все карты</em></span>
+							<ul>
+								<li>Все карты</li>
+								<li>8749029759476924792</li>
+								<li>7824821231232342344 </li>
+								<li>7503876023971085736</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="period">
+					<h6>Период:</h6>
+					<p>
+						<input type="text" class="from" value="16.01.2015">
+						<input type="text" class="to" value="16.04.2015">
+					</p>
+				</div>
+			</div>
+			<div class="core">
+				<h6 class="total">Сумарное потребление за период 11 290, 00 литров на сумму 146 900, 00 рублей</h6>
+				<ul>
+					<li class="expense">
+						<p class="data">03 мая,<span>14:00</span></p>
+						<p class="place" data-address="ул. Широкая, д. 14">00020035 Роснефть АЗС 035 <span>7824821231232342344</span></p>
+						<p class="product">1 290,00 л <span>Аи-95 / 36,90 <em>у</em></span></p>
+						<h5 class="minus">-47 601,00 <sup>у</sup></h5>
+					</li>
+					<li class="expense">
+						<p class="data">01 мая,<span>16:19</span></p>
+						<p class="place" data-address="ул. Широкая, д. 14">57900381 Лукойл АЗС 119 <span>1749029759476924792</span></p>
+						<p class="product">870,00 л <span>Shell V-Power 95 / 38,70<em>у</em></span></p>
+						<h5 class="minus">-33 699,00 <sup>у</sup></h5>
+					</li>
+					<li class="incoming">
+						<p class="data">29 апреля,<span>12:06</span></p>
+						<p class="place" data-address="ул. Широкая, д. 14">Пополнение через терминал QIWI <span>1749029759476924792</span></p>
+						<p class="product"></p>
+						<h5 class="plus">150 000,00 <sup>у</sup></h5>
+					</li>
+					<li class="expense">
+						<p class="data">27 апреля,<span>14:58</span></p>
+						<p class="place" data-address="ул. Широкая, д. 14">57900381 Лукойл АЗС 119 <span>7824821231232342344</span></p>
+						<p class="product">770,00 л <span>Shell V-Power 95 / 38,70<em>у</em></span></p>
+						<h5 class="minus">-29 799,00 <sup>у</sup></h5>
+					</li>
+					<li class="expense">
+						<p class="data">26 апреля,<span>22:12</span></p>
+						<p class="place" data-address="ул. Широкая, д. 14">00020035 Роснефть АЗС 035 <span>7824821231232342344</span></p>
+						<p class="product">1 290,00 л <span>Аи-95 / 36,90 <em>у</em></span></p>
+						<h5 class="minus">-47 601,00 <sup>у</sup></h5>
+					</li>
+					<li class="activation">
+						<p class="data">24 сентября,<span>18:10</span></p>
+						<p class="place" data-address="ул. Широкая, д. 14">Активация карты <span>7824821231232342344</span></p>
+						<p class="product"></span></p>
+						<h5 class="minus">-10 000,00 <sup>у</sup></h5>
+					</li>
+					<li class="expense">
+						<p class="data">01 мая,<span>16:19</span></p>
+						<p class="place" data-address="ул. Широкая, д. 14">57900381 Лукойл АЗС 119 <span>1749029759476924792</span></p>
+						<p class="product">870,00 л <span>Shell V-Power 95 / 38,70<em>у</em></span></p>
+						<h5 class="minus">-33 699,00 <sup>у</sup></h5>
+					</li>
+				</ul>
+				<button>Показать еще</button>
+			</div>
+		</section>
+	</div>
+	<div class="fade"></div>
+	<div class="modal editable" data-target="profile">
+		<div class="core">
+			<h4><span>Красильников</span> Игорь Констнтинович</h4>
+			<div class="element">
+				<p>E-mail</p>
+				<input type="text" value="Kras@mail.ru">
+			</div>
+			<div class="element">
+				<p>Телефон</p>
+				<input type="text" class="phone" value="+7 926 132 61 00">
+			</div>
+			<span class="split"></span>
+			<div class="element">
+				<p>Текущий пароль</p>
+				<input type="password" value="123456">
+			</div>
+			<div class="element">
+				<p>Новый пароль</p>
+				<input type="password">
+			</div>
+			<div class="element">
+				<p>Повторите пароль</p>
+				<input type="password">
+			</div>
+		</div>
+		<div class="buttons">
+			<button class="save">Сохранить</button>
+			<button class="cancel">Отменить</button>
+		</div>
+	</div>
+	<div class="modal" data-target="order">
+		<div class="core">
+			<h4><span>Заказать карту</span></h4>
+			<div class="order">
+				<p>Сразу после заказа карты с вашего счета будет списана стоимость карты в размере <span><em>300</em> рублей</span>, а также стоимость ее доставки (если применимо).</p>
+				<p>После получения карты и пин-кода к ней вам <strong>необходимо активировать карту в личном кабинете</strong></p>
+				<h5>Способ доставки</h5>
+				<ul class="drop">
+					<li>
+						<div><span>Получить почтой РФ <strong>100 <em>у</em></strong></span></div>
+						<ul>
+							<li>Получить почтой РФ <strong>100 <em>у</em></strong></li>
+							<li>DHL <strong>250 <em>у</em></strong></li>
+							<li>Курьер <strong>500 <em>у</em></strong></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="buttons">
+			<button class="order">Заказать</button>
+			<button class="cancel">Отменить</button>
+		</div>
+	</div>
+	<div class="modal editable card" data-target="card1">
+		<div class="core">
+			<h4 class="active">1749029759476924792</h4>
+			<div class="constant">
+				<p>Статус карты</p>
+				<h6 class="active">Активна</h6>
+			</div>
+			<div class="constant">
+				<p>Срок действия</p>
+				<h6>до 05/19К.</h6>
+			</div>
+			<div class="element">
+				<p>Держатель карты</p>
+				<input type="text" value="Константинов И. К.">
+			</div>
+			<div class="restrictions">
+				<h5>Ограничения по видам топлива</h5>
+				<ul class="restrictions-list">
+					<li>
+						<p class="title">
+							<span>Дизельное топливо Арктическое</span><span>Сезонное</span><span>Евро</span>
+						</p>
+						<p class="quantity">2,5 <em>л</em></p>
+						<p class="period">в неделю</p>
+					</li>
+					<li>
+						<p class="title">
+							<span>Бензин Аи-92</span>
+						</p>
+						<p class="quantity">3 <em>л</em></p>
+						<p class="period">в месяц</p>
+					</li>
+					<li>
+						<p class="title">
+							<span>Бензин Аи-95</span>
+						</p>
+						<p class="quantity">1 <em>л</em></p>
+						<p class="period">в день</p>
+					</li>
+				</ul>
+				<ul class="restrictions-edit">
+					<li>
+						<div>
+							<ul class="select type1">
+								<li>
+									<span data-selected="1"></span>
+									<ul>
+										<li data-option="1">Дизельное топливо Арктическое</li>
+										<li data-option="2">Бензин Аи-92</li>
+										<li data-option="3">Бензин Аи-95</li>
+									</ul>
+								</li>
+							</ul>
+							<span class="more"></span>
+							<span class="input">
+								<input type="text" value="2,5">
+								<em>л</em>
+							</span>
+							<ul class="select type2">
+								<li>
+									<span data-selected="2"></span>
+									<ul>
+										<li data-option="1">в день</li>
+										<li data-option="2">в неделю</li>
+										<li data-option="3">в месяц</li>
+										<li data-option="4">в год</li>
+									</ul>
+								</li>
+							</ul>
+							<span class="remove"></span>
+						</div>
+						<div>
+							<ul class="select type1">
+								<li>
+									<span data-selected="1"></span>
+									<ul>
+										<li data-option="1">Сезонное</li>
+										<li data-option="2">Евро</li>
+										<li data-option="3">Что-то еще</li>
+									</ul>
+								</li>
+							</ul>
+							<span class="hide"></span>
+						</div>
+						<div>
+							<ul class="select type1">
+								<li>
+									<span data-selected="2"></span>
+									<ul>
+										<li data-option="1">Сезонное</li>
+										<li data-option="2">Евро</li>
+										<li data-option="3">Что-то еще</li>
+									</ul>
+								</li>
+							</ul>
+							<span class="hide"></span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<ul class="select type1">
+								<li>
+									<span data-selected="2"></span>
+									<ul>
+										<li data-option="1">Дизельное топливо Арктическое</li>
+										<li data-option="2">Бензин Аи-92</li>
+										<li data-option="3">Бензин Аи-95</li>
+									</ul>
+								</li>
+							</ul>
+							<span class="more"></span>
+							<span class="input">
+								<input type="text" value="3">
+								<em>л</em>
+							</span>
+							<ul class="select type2">
+								<li>
+									<span data-selected="3"></span>
+									<ul>
+										<li data-option="1">в день</li>
+										<li data-option="2">в неделю</li>
+										<li data-option="3">в месяц</li>
+										<li data-option="4">в год</li>
+									</ul>
+								</li>
+							</ul>
+							<span class="remove"></span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<ul class="select type1">
+								<li>
+									<span data-selected="3"></span>
+									<ul>
+										<li data-option="1">Дизельное топливо Арктическое</li>
+										<li data-option="2">Бензин Аи-92</li>
+										<li data-option="3">Бензин Аи-95</li>
+									</ul>
+								</li>
+							</ul>
+							<span class="more"></span>
+							<span class="input">
+								<input type="text" value="1">
+								<em>л</em>
+							</span>
+							<ul class="select type2">
+								<li>
+									<span data-selected="1"></span>
+									<ul>
+										<li data-option="1">в день</li>
+										<li data-option="2">в неделю</li>
+										<li data-option="3">в месяц</li>
+										<li data-option="4">в год</li>
+									</ul>
+								</li>
+							</ul>
+							<span class="remove"></span>
+						</div>
+					</li>
+				</ul>
+				<h6 class="add"><span>Добавить лимит</span></h6>
+			</div>
+		</div>
+		<div class="buttons">
+			<button class="save">Сохранить</button>
+			<button class="edit">Редактировать</button>
+			<button class="block">Заблокировать</button>
+			<button class="unblock">Разблокировать</button>
+		</div>
+	</div>
+	<div class="modal editable card" data-target="card2">
+		<div class="core">
+			<h4 class="active">1749029759476924792</h4>
+			<div class="constant">
+				<p>Статус карты</p>
+				<h6 class="active">Активна</h6>
+			</div>
+			<div class="constant">
+				<p>Срок действия</p>
+				<h6>до 05/19К.</h6>
+			</div>
+			<div class="element">
+				<p>Держатель карты</p>
+				<input type="text" value="Константинов И. К.">
+			</div>
+			<div class="restrictions">
+				<h5>Ограничения по видам топлива</h5>
+				<ul class="restrictions-edit"></ul>
+				<p class="empty">Нет ограничений</p>
+				<h6 class="add"><span>Добавить лимит</span></h6>
+			</div>
+		</div>
+		<div class="buttons">
+			<button class="save">Сохранить</button>
+			<button class="edit">Редактировать</button>
+			<button class="block">Заблокировать</button>
+			<button class="unblock">Разблокировать</button>
+		</div>
+	</div>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/mask.js"></script>
+	<script src="./js/uniform.js"></script>
+	<script src="./js/dynamic.js"></script>
+</body>
+</html>

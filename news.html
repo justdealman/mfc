@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Московская топливная карта</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1280, user-scalable=yes">
+	<!--<link href="./favicon.ico" rel="shortcut icon">-->
+	<link href="./css/style.css" rel="stylesheet">
+	<!--[if IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<div>
+			<h3>Московская топливная карта</h3>
+			<nav>
+				<ul>
+					<li><a href="#">Транзакции</a></li>
+					<li class="active"><a href="#">Новости</a></li>
+				</ul>
+			</nav>
+			<ul class="user">
+				<li><a href="#" class="settings"><span></span></a></li>
+				<li><a href="#" class="exit"><span></span></a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="content">
+		<aside>
+			<div class="profile">
+				<h3 class="active">Красильников И.К.</h3>
+				<!--<h3 class="inactive">Красильников И.К.</h3>-->
+				<h5><span>На вашем счету</span> 5 150 456,00 <sup>у</sup></h5>
+			</div>
+			<div class="card">
+				<h5>Карты <span>(активные 2 из 3)</span></h5>
+				<ul>
+					<li><span class="active">1749029759476924792</span></li>
+					<li><span class="active">7824821231232342344</span></li>
+					<li><span class="inactive">7503876023971085736</span></li>
+				</ul>
+				<button data-open="order">Заказать новую карту</button>
+			</div>
+			<div class="statistic">
+				<h5>Статистика <em></em></h5>
+				<ul>
+					<li>
+						<p class="title">Сегодня</p>
+						<p class="quantity">5 600, 00 <span>л</span></p>
+						<p class="price">221 679,00 <span>у</span></p>
+					</li>
+					<li>
+						<p class="title">Вчера</p>
+						<p class="quantity">7 430, 00 <span>л</span></p>
+						<p class="price">287 541,00 <span>у</span></p>
+					</li>
+					<li>
+						<p class="title">На этой неделе</p>
+						<p class="quantity">5 340, 00 <span>л</span></p>
+						<p class="price">209 593,00 <span>у</span></p>
+					</li>
+				</ul>
+				<button>Показать еще</button>
+			</div>
+		</aside>
+		<section class="news">
+			<div>
+				<h4>Действующие тарифы</h4>
+				<ul>
+					<li>
+						<h6>25 сентября – 30 сентября</h6>
+						<p>Скидка 50 коп.с каждого литра топлива на АЗС  Shell №4. Европейское сообщество по атомной энергии (Евроатом) одобрило российско-венгерский контракт на поставки ядерного топлива для проекта "Пакш-2".</p>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h4>Новости</h4>
+				<ul>
+					<li>
+						<h6>30 сентября</h6>
+						<p>Стоимость депозитарных расписок "Роснефти" снизилась на 3,26% — до 4,21 доллара, ЛУКОЙЛа — на 2,15% — до 45,15 доллара за расписку, "Газпром нефти" — на 1,22% — до 12,15 доллара, "Газпрома" — на 3,85%, до 5 долларов.</p>
+					</li>
+					<li>
+						<div class="photo">
+							<img src="./pic/new1.png" width="121" height="32" alt="">
+						</div>
+						<h6>до 1 мая</h6>
+						<p>«Татнефть» с начала года увеличила добычу нефти на 0,8% Скидка 50 коп..с каждого  литра топлива на АЗС Татнефть №1</p>
+					</li>
+					<li>
+						<div class="photo">
+							<img src="./pic/new2.png" width="48" height="55" alt="">
+						</div>
+						<h6>25 сентября – 30 сентября</h6>
+						<p>Скидка 50 коп.с каждого литра топлива на АЗС  Shell №4. Европейское сообщество по атомной энергии (Евроатом) одобрило российско-венгерский контракт на поставки ядерного топлива для проекта "Пакш-2".</p>
+					</li>
+					<li>
+						<div class="photo">
+							<img src="./pic/new1.png" width="121" height="32" alt="">
+						</div>
+						<h6>до 1 мая</h6>
+						<p>«Татнефть» с начала года увеличила добычу нефти на 0,8% Скидка 50 коп..с каждого  литра топлива на АЗС Татнефть №1</p>
+					</li>
+				</ul>
+			</div>
+			<button>Показать еще</button>
+		</section>
+	</div>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/mask.js"></script>
+	<script src="./js/uniform.js"></script>
+	<script src="./js/dynamic.js"></script>
+</body>
+</html>
